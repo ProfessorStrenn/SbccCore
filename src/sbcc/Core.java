@@ -92,6 +92,19 @@ public class Core {
 		System.out.printf(format, args);
 	}
 
+	/**
+	 * Returns the next line of text from System.in (typically the keyboard). This
+	 * method makes it very easy use, but it is not efficient because it creates new
+	 * BufferReader and InputStreamReader with each call.
+	 * 
+	 * @return The next line of text from the standard input.
+	 * @throws IOException
+	 */
+	public static String readLine() throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(in));
+		return br.readLine();
+	}
+
 	public static String readFile(String path) throws IOException {
 		path = path.replaceFirst("^~", getProperty("user.home"));
 		String s = new String(Files.readAllBytes(Paths.get(path)));
