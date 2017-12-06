@@ -11,14 +11,14 @@ System.out.println("Hell-o");
 Other static functions:
 ```java
 printf("%d words in %s\n", words.size(), path);
-print("Hello");
 
+print("Hello");
 
 String s = readLine();
 
 String quakeText = readFile("4.5_week.atom");
 
-List<String> words = *readFileAsLines*("dict.txt");
+List<String> words = readFileAsLines("dict.txt");
 
 writeFile("file.txt", str);
 
