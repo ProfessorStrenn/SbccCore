@@ -1,5 +1,5 @@
 # SbccCore
-Provides simple functions that make Java a *whole* lot easier to use:
+Provides simple static functions that make Java a *whole* lot easier to use:
 
 ```java
 println("Hello");
