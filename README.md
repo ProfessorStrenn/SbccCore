@@ -28,7 +28,8 @@ parseInt/Long/Float/Double/Boolean()
 ```
 
 # To Use
-Add `sbcccore.x.y.z.jar` to your build path.
-Add the following line to your Java source:
+1. Download the latest [`sbcccore.x.y.z.jar`](https://github.com/ProfessorStrenn/SbccCore/releases) into your project.
+2. Add `sbcccore.x.y.z.jar` to your build path.
+3. Add the following line to your Java source:
 ```java
 import static sbcc.Core.*;
