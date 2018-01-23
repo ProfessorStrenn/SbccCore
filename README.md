@@ -22,7 +22,13 @@ printf("%d words in %s\n", words.size(), path);
 
 print("Hello");
 
-String s = readLine();
+String s = readLine();  // Read a line of text from the console
 
 parseInt/Long/Float/Double/Boolean()
 ```
+
+# To Use
+Add sbcccore.x.y.z.jar to your build path.
+Add the following line to your Java source:
+```java
+import static sbcc.Core.*;
