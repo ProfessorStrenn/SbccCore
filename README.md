@@ -26,6 +26,10 @@ String s = readLine();  // Read a line of text from the console
 
 parseInt/Long/Float/Double/Boolean()
 ```
+Printing Arrays:
+```java
+printArray([[0,1,2],[3,4,5],[6,7,8]]);
+```
 
 # To Use
 **NOTE:  If you are using the `workspace-cs106-v3` workspace in Eclipse, you don't have to do anything.  It already has a template project that is set up to use sbcccore.**
