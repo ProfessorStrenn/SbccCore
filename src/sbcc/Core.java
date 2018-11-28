@@ -8,12 +8,6 @@ import java.util.*;
 
 public class Core {
 
-	public static void main(String[] args) {
-		int[][] arr = new int[][] { { 0, 0, 1, 20, 3 }, { 0, 2, 6 }, { 54, 2, 7, 2 } };
-		printArray(arr);
-	}
-
-
 	public static void print(boolean b) {
 		System.out.print(b);
 	}
