@@ -11,7 +11,7 @@ import java.util.stream.*;
 public class Core {
 
 	public static String getSbccCoreVersion() {
-		return "1.0.6";
+		return "1.0.8";
 	}
 
 
