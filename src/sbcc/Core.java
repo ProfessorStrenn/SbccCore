@@ -1,5 +1,6 @@
 package sbcc;
 
+
 import static java.lang.System.*;
 
 import java.io.*;
@@ -10,7 +11,7 @@ import java.util.stream.*;
 public class Core {
 
 	public static String getSbccCoreVersion() {
-		return "1.0.3";
+		return "1.0.6";
 	}
 
 
@@ -118,17 +119,41 @@ public class Core {
 		System.out.printf(format, args);
 	}
 
+	/**
+	 * sbcc.Core's standard input reader
+	 */
+	private static BufferedReader coreStdin = null;
 
 	/**
-	 * Returns the next line of text from System.in (typically the keyboard). This method makes it very easy use, but it
-	 * is not efficient because it creates new BufferReader and InputStreamReader with each call.
+	 * @return A reference to sbcc.Core's standard input reader.  Implmenents a thread-safe
+	 * Singleton pattern.  The reader is instantiated in a lazy fashion.
+	 */
+	public static synchronized BufferedReader getStdin() {
+		if (coreStdin == null)
+			coreStdin = new BufferedReader(new InputStreamReader(in));
+		return coreStdin;
+	}
+	
+	/**
+	 * Allows clients to close sbcc.Core's standard input reader.
+	 * NOTE:  Once closed, the standard input cannot be reopened.
 	 * 
+	 * @throws IOException
+	 */
+	public static synchronized void closeStdin() throws IOException {
+		if (coreStdin != null) {
+			coreStdin.close();
+			coreStdin = null;
+		}
+	}
+
+
+	/**
 	 * @return The next line of text from the standard input.
 	 * @throws IOException
 	 */
 	public static String readLine() throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(in));
-		return br.readLine();
+		return getStdin().readLine();
 	}
 
 
