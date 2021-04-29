@@ -25,6 +25,10 @@ print("Hello");
 String s = readLine();  // Read a line of text from the console
 
 parseInt/Long/Float/Double/Boolean()
+
+Range:
+for (var i : range(10))
+  println(i);
 ```
 
 # To Use
