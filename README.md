@@ -29,10 +29,12 @@ parseInt/Long/Float/Double/Boolean()
 Range:
 for (var i : range(10))
   println(i);
+
+var map = mapOf("key1", value1, "key2", value2);  // Creates a mutable HashMap.  Supports up to 10 key/value pairs.
 ```
 
 # To Use
-**NOTE:  If you are using the `workspace-cs106-v4` workspace in Eclipse, you don't have to do anything.  It already has a template project that is set up to use sbcccore.**
+**NOTE:  If you are using the `workspace-cs106-v5` workspace in Eclipse, you don't have to do anything.  It already has a template project that is set up to use sbcccore.**
 
 1. Download the latest [`sbcccore.x.y.z.jar`](https://github.com/ProfessorStrenn/SbccCore/releases) into your project.
 2. Add `sbcccore.x.y.z.jar` to your build path.
