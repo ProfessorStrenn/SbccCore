@@ -20,8 +20,7 @@ public class Core {
 
 
 	/**
-	 * Prints the given value.
-	 * @param b
+	 * Prints the given value, leaving the cursor on the same line.
 	 */
 	public static void print(boolean b) {
 		System.out.print(b);
@@ -29,153 +28,222 @@ public class Core {
 
 
 	/**
-	 * Prints the given value.
-	 * @param c
+	 * Prints the given value, leaving the cursor on the same line.
 	 */
 	public static void print(char c) {
 		System.out.print(c);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(int i) {
 		System.out.print(i);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(long l) {
 		System.out.print(l);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(float f) {
 		System.out.print(f);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(double d) {
 		System.out.print(d);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(char s[]) {
 		System.out.print(s);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(String s) {
 		System.out.print(s);
 	}
 
 
+	/**
+	 * Prints the given value, leaving the cursor on the same line.
+	 */
 	public static void print(Object obj) {
 		System.out.print(obj);
 	}
 
 
+	/**
+	 * Prints a blank line.
+	 */
 	public static void println() {
 		System.out.println();
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(boolean b) {
 		System.out.println(b);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(char c) {
 		System.out.println(c);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(int i) {
 		System.out.println(i);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(long l) {
 		System.out.println(l);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(float f) {
 		System.out.println(f);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(double d) {
 		System.out.println(d);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(char s[]) {
 		System.out.println(s);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(String s) {
 		System.out.println(s);
 	}
 
 
+	/**
+	 * Prints the given value via System.out.println().
+	 */
 	public static void println(Object obj) {
 		System.out.println(obj);
 	}
 
 
+	/**
+	 * Calls System.out.printf()
+	 */
 	public static void printf(java.util.Locale l, String format, Object... args) {
 		System.out.printf(l, format, args);
 	}
 
 
+	/**
+	 * Calls System.out.printf()
+	 */
 	public static void printf(String format, Object... args) {
 		System.out.printf(format, args);
 	}
 
-    /*
-     * println array methods written by Jackson Weidmann
-     *
-     * these methods will take in a 1-D or 2-D array and print it out.
-     *
-     * Example: [0,1,2,3]
-     *
-     * or
-     *
-     * [[0,1,2,3],\n[4,5,6,7],\n[8,9,10,11]]
-     */
-
-
-    // Print 1-D array
+	/**
+	 * Prints the given 1D array with values separated by commas and followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(int[] obj) {
         System.out.println(Arrays.toString(obj));
     }
 
 
+	/**
+	 * Prints the given 1D array with values separated by commas and followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(boolean[] obj) {
         System.out.println(Arrays.toString(obj));
     }
 
 
+	/**
+	 * Prints the given 1D array with values separated by commas and followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(long[] obj) {
         System.out.println(Arrays.toString(obj));
     }
 
 
+	/**
+	 * Prints the given 1D array with values separated by commas and followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(float[] obj) {
         System.out.println(Arrays.toString(obj));
     }
 
 
+	/**
+	 * Prints the given 1D array with values separated by commas and followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(double[] obj) {
         System.out.println(Arrays.toString(obj));
     }
 
 
+	/**
+	 * Prints the given 1D array with values separated by commas and followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(Object[] obj) {
         System.out.println(Arrays.toString(obj));
     }
 
 
-    // Print 2-D array
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(char[][] obj) {
         int k = 0;
         for (char[] o : obj) {
@@ -185,6 +253,10 @@ public class Core {
     }
 
 
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(int[][] obj) {
         int k = 0;
         for (int[] o : obj) {
@@ -194,6 +266,10 @@ public class Core {
     }
 
 
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(boolean[][] obj) {
         int k = 0;
         for (boolean[] o : obj) {
@@ -203,6 +279,10 @@ public class Core {
     }
 
 
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(long[][] obj) {
         int k = 0;
         for (long[] o : obj) {
@@ -212,6 +292,10 @@ public class Core {
     }
 
 
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(float[][] obj) {
         int k = 0;
         for (float[] o : obj) {
@@ -221,6 +305,10 @@ public class Core {
     }
 
 
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(double[][] obj) {
         int k = 0;
         for (double[] o : obj) {
@@ -230,6 +318,10 @@ public class Core {
     }
 
 
+	/**
+	 * Prints the given 2D array with values separated by commas.  Each row is followed by a lineSeparator().
+	 * Credit:  Jackson Weidmann
+	 */
     public static void println(Object[][] obj) {
         int k = 0;
 
@@ -279,6 +371,12 @@ public class Core {
 	}
 
 
+	/**
+	 * Reads the given file into a String.
+	 * @param path Path tp read.
+	 * @return All text from the file.
+	 * @throws IOException
+	 */
 	public static String readFile(String path) throws IOException {
 		path = path.replaceFirst("^~", getProperty("user.home"));
 		String s = new String(Files.readAllBytes(Paths.get(path)));
@@ -286,6 +384,12 @@ public class Core {
 	}
 
 
+	/**
+	 * Writes the given list to a text file, one line per list item.
+	 * @param path Path of the file to write.
+	 * @param lines List of lines to write.
+	 * @throws IOException
+	 */
 	public static void writeFileAsLines(String path, List<String> lines) throws IOException {
 		path = path.replaceFirst("^~", getProperty("user.home"));
 		StringBuilder sb = new StringBuilder(2 * lines.size() * lines.get(0).length());

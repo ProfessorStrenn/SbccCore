@@ -11,8 +11,9 @@
         </sealing>
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
-        <file path="/SbccCore/.classpath"/>
-        <file path="/SbccCore/sbcccore_manifest"/>
         <javaElement handleIdentifier="=SbccCore/src"/>
+        <file path="/SbccCore/.classpath"/>
+        <folder path="/SbccCore/doc"/>
+        <file path="/SbccCore/sbcccore_manifest"/>
     </selectedElements>
 </jardesc>
