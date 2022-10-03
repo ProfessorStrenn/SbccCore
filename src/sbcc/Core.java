@@ -119,6 +119,115 @@ public class Core {
 		System.out.printf(format, args);
 	}
 
+	/*
+	 * printArray method written by Jackson Weidmann
+	 * 
+	 * this method will take in a 1-D or 2-D array and print it out.
+	 * 
+	 * Example: [0,1,2,3]
+	 * 
+	 * or
+	 * 
+	 * [[0,1,2,3],\n[4,5,6,7],\n[8,9,10,11]]
+	 */
+
+
+	// Print 1-D array
+	public static void printArray(int[] obj) {
+		System.out.println(Arrays.toString(obj));
+	}
+
+
+	public static void printArray(boolean[] obj) {
+		System.out.println(Arrays.toString(obj));
+	}
+
+
+	public static void printArray(long[] obj) {
+		System.out.println(Arrays.toString(obj));
+	}
+
+
+	public static void printArray(float[] obj) {
+		System.out.println(Arrays.toString(obj));
+	}
+
+
+	public static void printArray(double[] obj) {
+		System.out.println(Arrays.toString(obj));
+	}
+
+
+	public static void printArray(Object[] obj) {
+		System.out.println(Arrays.toString(obj));
+	}
+
+
+	// Print 2-D array
+	public static void printArray(char[][] obj) {
+		int k = 0;
+		for (char[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
+	public static void printArray(int[][] obj) {
+		int k = 0;
+		for (int[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
+	public static void printArray(boolean[][] obj) {
+		int k = 0;
+		for (boolean[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
+	public static void printArray(long[][] obj) {
+		int k = 0;
+		for (long[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
+	public static void printArray(float[][] obj) {
+		int k = 0;
+		for (float[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
+	public static void printArray(double[][] obj) {
+		int k = 0;
+		for (double[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
+	public static void printArray(Object[][] obj) {
+		int k = 0;
+
+		for (Object[] o : obj) {
+			System.out.println((k == 0 ? "[" : "") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+			k++;
+		}
+	}
+
+
 	/**
 	 * sbcc.Core's standard input reader
 	 */

@@ -34,6 +34,10 @@ var list = listOf("This", "That", "The other");   // Creates a mutable ArrayList
 
 var map = mapOf("key1", value1, "key2", value2);  // Creates a mutable HashMap.  Supports up to 10 key/value pairs.
 ```
+Printing Arrays:
+```java
+printArray([[0,1,2],[3,4,5],[6,7,8]]);
+```
 
 # To Use
 **NOTE:  If you are using the `workspace-cs106-v5` workspace in Eclipse, you don't have to do anything.  It already has a template project that is set up to use sbcccore.**
