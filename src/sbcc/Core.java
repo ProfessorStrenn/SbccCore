@@ -375,7 +375,7 @@ public class Core {
 
 	/**
 	 * Reads the given file into a String.
-	 * @param path Path tp read.
+	 * @param path Path of the file to read.
 	 * @return All text from the file.
 	 * @throws IOException
 	 */
@@ -402,8 +402,8 @@ public class Core {
 
 	/**
 	 * Writes the given text to the files specified by path.
-	 * @param path
-	 * @param text
+	 * @param path Path of the file to write
+	 * @param text Text to write
 	 * @throws IOException
 	 */
 	public static void writeFile(String path, String text) throws IOException {
@@ -414,7 +414,7 @@ public class Core {
 
 	/**
 	 * Reads the file specified by path into a List<String> (one line per list element).
-	 * @param path
+	 * @param path Path of the file to read
 	 * @return The list of strings
 	 * @throws IOException
 	 */
@@ -507,7 +507,9 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
+	 * @param <T> Type of the values to add
+	 * @param v1 Value to add
+	 * @param v2 Value to add
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2) {
@@ -517,7 +519,10 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
+	 * @param <T> Type of the values to add
+	 * @param v1 Value to add
+	 * @param v2 Value to add
+	 * @param v3 Value to add
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3) {
