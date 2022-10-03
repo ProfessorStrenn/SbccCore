@@ -507,7 +507,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2) {
@@ -517,7 +517,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3) {
@@ -527,7 +527,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4) {
@@ -537,7 +537,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5) {
@@ -547,7 +547,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6) {
@@ -557,7 +557,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7) {
@@ -567,7 +567,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8) {
@@ -577,7 +577,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8, T v9) {
@@ -587,7 +587,7 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 through vn Elements to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given values.
 	 */
 	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8, T v9, T v10) {
@@ -597,8 +597,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1) {
@@ -608,8 +608,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2) {
@@ -619,8 +619,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3) {
@@ -630,8 +630,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4) {
@@ -641,8 +641,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5) {
@@ -652,8 +652,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5, K k6, V v6) {
@@ -663,8 +663,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5, K k6, V v6, K k7,
@@ -675,8 +675,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5, K k6, V v6, K k7,
@@ -687,8 +687,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5, K k6, V v6, K k7,
@@ -699,8 +699,8 @@ public class Core {
 
 	/**
 	 * Sample usage for 2 or more elements:  <code>var map = mapOf("Roya", 10, "Kian", 11);</code>
-	 * @param k1 through kn keys to add.
-	 * @param v1 through vn values to add.
+	 * @param k1 <code>k<sub>n</sub></code> Keys to add.
+	 * @param v1 <code>v<sub>n</sub></code> Values to add.
 	 * @return A mutable HashMap&lt;K,V&gt; with the given key-value entries.
 	 */
 	public static <K, V> Map<K, V> mapOf(K k1, V v1, K k2, V v2, K k3, V v3, K k4, V v4, K k5, V v5, K k6, V v6, K k7,
