@@ -10,16 +10,28 @@ import java.util.stream.*;
 
 public class Core {
 
+	/**
+	 * 
+	 * @return This sbcc.Core version
+	 */
 	public static String getSbccCoreVersion() {
-		return "1.0.9";
+		return "1.0.10";
 	}
 
 
+	/**
+	 * Prints the given value.
+	 * @param b
+	 */
 	public static void print(boolean b) {
 		System.out.print(b);
 	}
 
 
+	/**
+	 * Prints the given value.
+	 * @param c
+	 */
 	public static void print(char c) {
 		System.out.print(c);
 	}
@@ -119,6 +131,116 @@ public class Core {
 		System.out.printf(format, args);
 	}
 
+    /*
+     * println array methods written by Jackson Weidmann
+     *
+     * these methods will take in a 1-D or 2-D array and print it out.
+     *
+     * Example: [0,1,2,3]
+     *
+     * or
+     *
+     * [[0,1,2,3],\n[4,5,6,7],\n[8,9,10,11]]
+     */
+
+
+    // Print 1-D array
+    public static void println(int[] obj) {
+        System.out.println(Arrays.toString(obj));
+    }
+
+
+    public static void println(boolean[] obj) {
+        System.out.println(Arrays.toString(obj));
+    }
+
+
+    public static void println(long[] obj) {
+        System.out.println(Arrays.toString(obj));
+    }
+
+
+    public static void println(float[] obj) {
+        System.out.println(Arrays.toString(obj));
+    }
+
+
+    public static void println(double[] obj) {
+        System.out.println(Arrays.toString(obj));
+    }
+
+
+    public static void println(Object[] obj) {
+        System.out.println(Arrays.toString(obj));
+    }
+
+
+    // Print 2-D array
+    public static void println(char[][] obj) {
+        int k = 0;
+        for (char[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+
+
+    public static void println(int[][] obj) {
+        int k = 0;
+        for (int[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+
+
+    public static void println(boolean[][] obj) {
+        int k = 0;
+        for (boolean[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+
+
+    public static void println(long[][] obj) {
+        int k = 0;
+        for (long[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+
+
+    public static void println(float[][] obj) {
+        int k = 0;
+        for (float[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+
+
+    public static void println(double[][] obj) {
+        int k = 0;
+        for (double[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+
+
+    public static void println(Object[][] obj) {
+        int k = 0;
+
+        for (Object[] o : obj) {
+            System.out.println((k == 0 ? "[" : " ") + Arrays.toString(o) + (k == obj.length - 1 ? "]" : ","));
+            k++;
+        }
+    }
+    
+    
+    
 	/**
 	 * sbcc.Core's standard input reader
 	 */
@@ -217,6 +339,57 @@ public class Core {
 	public static int[] range(int startInclusive, int stopExclusive, int step) {
 		return IntStream.range(startInclusive, stopExclusive).filter(x -> (x - startInclusive) % step == 0).toArray();
 	}
+	
+	
+	public static <T> List<T> listOf(T v) {
+		return new ArrayList<T>(List.of(v));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2) {
+		return new ArrayList<T>(List.of(v1, v2));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3) {
+		return new ArrayList<T>(List.of(v1, v2, v3));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7, v8));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8, T v9) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7, v8, v9));
+	}
+
+
+	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8, T v9, T v10) {
+		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10));
+	}
+
 
 	public static <K, V> Map<K, V> mapOf(K k1, V v1) {
 		return new HashMap(Map.of(k1, v1));
