@@ -22,6 +22,9 @@ printf("%d words in %s\n", words.size(), path);
 
 print("Hello");
 
+var data = new int[][] {{0,1,2}, {3,4,5}, {6,7,8}};
+println(data);    // print arrays (1D or 2D)
+
 String s = readLine();  // Read a line of text from the console
 
 parseInt/Long/Float/Double/Boolean()
@@ -29,6 +32,8 @@ parseInt/Long/Float/Double/Boolean()
 Range:
 for (var i : range(10))
   println(i);
+
+var list = listOf("This", "That", "The other");   // Creates a mutable ArrayList.  Supports up to 10 values.
 
 var map = mapOf("key1", value1, "key2", value2);  // Creates a mutable HashMap.  Supports up to 10 key/value pairs.
 ```
