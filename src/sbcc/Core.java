@@ -493,111 +493,19 @@ public class Core {
 	public static int[] range(int startInclusive, int stopExclusive, int step) {
 		return IntStream.range(startInclusive, stopExclusive).filter(x -> (x - startInclusive) % step == 0).toArray();
 	}
-	
+
+
+
 
 	/**
-	 * Sample usage:  <code>var list = listOf("a");</code>
-	 * @param v Element to add.
+	 * Sample usage:  <code>var list = listOf("a", "b", "c");</code>
+	 * @param args Elements to add.
 	 * @return A mutable ArrayList&lt;T&gt; with the given value.
 	 */
-	public static <T> List<T> listOf(T v) {
-		return new ArrayList<T>(List.of(v));
+	public static <T> List<T> listOf(T... args) {
+		return new ArrayList<T>(List.of(args));
 	}
 
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param <T> Type of the values to add
-	 * @param v1 Value to add
-	 * @param v2 Value to add
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2) {
-		return new ArrayList<T>(List.of(v1, v2));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param <T> Type of the values to add
-	 * @param v1 Value to add
-	 * @param v2 Value to add
-	 * @param v3 Value to add
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3) {
-		return new ArrayList<T>(List.of(v1, v2, v3));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7, v8));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8, T v9) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7, v8, v9));
-	}
-
-
-	/**
-	 * Sample usage for 2 or more elements:  <code>var list = listOf("a", "b");</code>
-	 * @param v1 <code>v<sub>n</sub></code> Values to add.
-	 * @return A mutable ArrayList&lt;T&gt; with the given values.
-	 */
-	public static <T> List<T> listOf(T v1, T v2, T v3, T v4, T v5, T v6, T v7, T v8, T v9, T v10) {
-		return new ArrayList<T>(List.of(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10));
-	}
 
 
 	/**
