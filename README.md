@@ -39,7 +39,6 @@ var map = mapOf("key1", value1, "key2", value2);  // Creates a mutable HashMap. 
 ```
 
 # To Use
-**NOTE:  If you are using the `workspace-cs106-v5` workspace in Eclipse, you don't have to do anything.  It already has a template project that is set up to use sbcccore.**
 
 1. Download the latest [`sbcccore.x.y.z.jar`](https://github.com/ProfessorStrenn/SbccCore/releases) into your project.
 2. Add `sbcccore.x.y.z.jar` to your build path.
